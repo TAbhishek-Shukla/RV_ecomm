@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/product.css';
 import { NavLink } from 'react-router-dom';
 import FormatPrice from '../helpers/FormatPrice';
-const Product = ({ product,currency }) => {
+const ProductCard = ({ product,currency }) => {
  
   return (
     <div className="product-card">
@@ -24,4 +24,4 @@ const Product = ({ product,currency }) => {
   );
 };
 
-export default Product;
+export default ProductCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from './product';
+import ProductCard from './ProductCard';
 import { useProducts } from '../context/productContext';
 import '../styles/featuredprod.css'
 import CurrencyForamatter from './CurrencyForamatter';
@@ -25,7 +25,7 @@ import CurrencyForamatter from './CurrencyForamatter';
           )
           :
             (featuredProducts?.map(product => (
-              <Product key={product.id} product={product}   />
+              <ProductCard key={product.id} product={product}   />
             )))
             }
           </div>
