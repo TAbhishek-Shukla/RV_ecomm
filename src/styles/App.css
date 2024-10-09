@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size: 4.6rem
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.6rem;
+}
+.container{
+    margin: auto;
+    padding-inline: 4.2rem;
+}
+.grid{
+    display: grid;
+}
+.grid-two-col{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-three-col{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-four-col{
+    grid-template-columns: repeat(4,1fr);
+}
+/* //using nested css  */
+.hero-button {
+    margin-block: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: rgb(58, 86, 248);
+    }
+  }
+  .loading{
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .error-msg{
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  /* Default box shadow for larger screens */
+
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 998px) {
+   html{
+     font-size: 61%;
+   }
+   .grid-three-col .grid-four-col{
+    grid-template-columns: 1fr 1fr;
+}
+  }
+  
+  /* Small screens (mobile devices) */
+  @media (max-width: 768px) {
+    html{
+        font-size: 50%;
+      }
+      .grid-two-col .grid-three-col .grid-four-col{
+        grid-template-columns: 1fr;
+    }
+  }
+  
+  

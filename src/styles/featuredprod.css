@@ -1,0 +1,40 @@
+
+.products-page{
+  padding-block: 9rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(237, 238, 238);
+  gap: 2rem;
+}
+.featured-prod{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+}
+h3{
+  text-align: left;
+}
+h1{
+  text-align: left;
+}
+.format-currency{
+  align-self: flex-end;
+}
+@media (max-width:768px) {
+  .products-page{
+    flex-direction: column;
+  }
+  .featured-prod{
+    flex-direction: column;
+  }
+  h3{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  .format-currency{
+    align-self: center;
+  }
+}

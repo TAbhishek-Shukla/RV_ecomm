@@ -1,0 +1,44 @@
+.currency-formatter {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.currency-formatter h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.radio-group div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio-group label {
+    font-size: 1.8rem;
+    margin-inline:.6rem;
+}
+
+.currency-formatter h4 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .radio-group {
+        align-items: center;
+    }
+}

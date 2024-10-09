@@ -1,0 +1,114 @@
+.filter-sect{padding: 5rem 0;
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+h3 {
+  padding: 2rem 0;
+  font-size: bold;
+}
+
+.filter-search {
+  input {
+    padding: 0.6rem 1rem;
+    width: 80%;
+  }
+}
+
+.filter-category {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+
+    button {
+      border: none;
+      color: black;
+      background-color:white;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      &:hover {
+        color:rgb(85, 101, 247)
+      }
+    }
+
+    .active {
+      border-bottom: 1px solid #000;
+      color:rgb(255, 255, 255) !important;
+      background-color: dodgerblue;
+    }
+  }
+}
+
+.filter-company--select {
+  padding: 0.3rem 1.2rem;
+  font-size: 1.6rem;
+  color:rgb(46, 44, 44);
+  text-transform: capitalize;
+}
+
+.filter-color-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-all--style {
+  color:black;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: dodgerblue;
+    color: #ffff;
+  }
+}
+.btnStyle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.active {
+  opacity: 1;
+}
+
+.checkStyle {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.filter_price {
+  input {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0;
+    box-shadow: none;
+    cursor: pointer;
+    background-color: rgb(113, 104, 245);
+  }
+}
+
+.filter-shipping {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-clear .btn {
+  background-color: #575af5;
+  color: #ffffff;
+}
