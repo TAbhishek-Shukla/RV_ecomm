@@ -1,6 +1,6 @@
 import notfound from '../assets/notfound.jpg'
 import { useNavigate } from 'react-router-dom';
-import '../styles/notFound.css';
+import '../styles/notfound.css';
 
 const ErrorPage = () => {
   const navigate = useNavigate();
